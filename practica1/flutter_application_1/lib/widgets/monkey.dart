@@ -5,8 +5,11 @@ class Monkey extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(height: 400, width: 200, color: Colors.brown),
+    return SafeArea(
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Image.asset('assets/img/monkey.png'),
+      ),
     );
   }
 }
